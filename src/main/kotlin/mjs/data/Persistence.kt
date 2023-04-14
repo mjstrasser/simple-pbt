@@ -22,8 +22,8 @@ class Persistence {
     fun saveAddress(address: Address) {
 
         assert(address.line1.length < 100)
-        assert(address.line2.length < 100)
-        assert(address.line3.length < 100)
+        if (address.line2 != null) assert(address.line2.length < 100)
+        if (address.line3 != null) assert(address.line3.length < 100)
         assert((1000..9000).contains(address.postcode))
         assert(states.contains(address.state))
         assert(address.suburb.length < 50)
