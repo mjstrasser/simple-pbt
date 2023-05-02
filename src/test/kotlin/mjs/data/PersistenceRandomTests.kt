@@ -13,16 +13,16 @@ import mjs.helpers.randomSuburb
 class PersistenceRandomTests : DescribeSpec({
     describe("persisting people") {
         val persistence = Persistence()
-        it("gets a person who was saved") {
+        it("gets a person who was saved, identified by their ID") {
             val id = randomId()
-            val person = Person(id, randomName(), randomPastDate(150))
+            val person = Person(id, randomName(), randomPastDate())
             persistence.savePerson(person)
 
             persistence.getPerson(id) shouldBe person
         }
-        it("changes the name of a person identified by their ID") {
+        it("changes the name of a person, identified by their ID") {
             val id = randomId()
-            val person = Person(id, randomName(), randomPastDate(150))
+            val person = Person(id, randomName(), randomPastDate())
             persistence.savePerson(person)
 
             val newName = randomName()
@@ -34,7 +34,7 @@ class PersistenceRandomTests : DescribeSpec({
     }
     describe("persisting addresses") {
         val persistence = Persistence()
-        it("gets an address that was saved") {
+        it("gets an address that was saved, identified by ID") {
             val id = randomId()
             val address = Address(
                 id = id,
@@ -47,7 +47,7 @@ class PersistenceRandomTests : DescribeSpec({
 
             persistence.getAddress(id) shouldBe address
         }
-        it("updates an address identified by ID") {
+        it("updates an address, identified by ID") {
             val id = randomId()
             val suburb = randomSuburb()
             val state = randomState()

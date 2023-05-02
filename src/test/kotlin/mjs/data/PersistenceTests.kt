@@ -7,15 +7,15 @@ import java.time.LocalDate
 class PersistenceTests : DescribeSpec({
     describe("persisting people") {
         val persistence = Persistence()
-        it("gets a person who was saved") {
-            val walterId = "123456"
+        it("gets a person who was saved, identified by their ID") {
+            val walterId = 1234567L
             val walter = Person(walterId, "Walter Gropius", LocalDate.of(1883, 5, 18))
             persistence.savePerson(walter)
 
             persistence.getPerson(walterId) shouldBe walter
         }
-        it("updates a person identified by ID") {
-            val almaId = "123457"
+        it("updates a person, identified by ID") {
+            val almaId = 1234568L
             val almaMahler = Person(almaId, "Alma Mahler", LocalDate.of(1879, 8, 31))
             persistence.savePerson(almaMahler)
 
@@ -27,27 +27,27 @@ class PersistenceTests : DescribeSpec({
     }
     describe("persisting addresses") {
         val persistence = Persistence()
-        it("gets an address that was saved") {
-            val twBneId = "654321"
+        it("gets an address that was saved, identified by ID") {
+            val twBneId = 7654321L
             val address = Address(
                 id = twBneId,
                 line1 = "129 Creek Street",
                 suburb = "Brisbane",
-                state = "QLD",
+                state = State.QLD,
                 postcode = 4000,
             )
             persistence.saveAddress(address)
 
             persistence.getAddress(twBneId) shouldBe address
         }
-        it("updates an address identified by ID") {
-            val twSydId = "654322"
+        it("updates an address, identified by ID") {
+            val twSydId = 7654322L
             persistence.saveAddress(
                 Address(
                     id = twSydId,
                     line1 = "52 Carrington Street",
                     suburb = "Sydney",
-                    state = "NSW",
+                    state = State.NSW,
                     postcode = 2000,
                 )
             )
@@ -56,7 +56,7 @@ class PersistenceTests : DescribeSpec({
                     id = twSydId,
                     line1 = "50 Carrington Street",
                     suburb = "Sydney",
-                    state = "NSW",
+                    state = State.NSW,
                     postcode = 2000,
                 )
             )

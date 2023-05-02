@@ -15,5 +15,5 @@ private fun randomSecondsForYears(maxYears: Long): Long =
     Random.nextLong(maxYears * 365 * 86_400)
 
 
-fun randomPastDate(maxYears: Long = 10): LocalDate = LocalDate.now()
+fun randomPastDate(maxYears: Long = 100): LocalDate = LocalDate.now()
     .minusDays(Random.nextLong(maxYears * 365))
