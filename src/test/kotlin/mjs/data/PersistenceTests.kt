@@ -19,7 +19,7 @@ class PersistenceTests : DescribeSpec({
             val almaMahler = Person(almaId, "Alma Mahler", LocalDate.of(1879, 8, 31))
             persistence.savePerson(almaMahler)
 
-            val almaGropius = Person(almaId, "Alma Gropius", LocalDate.of(1879, 8, 31))
+            val almaGropius = almaMahler.copy(name = "Alma Gropius")
             persistence.savePerson(almaGropius)
 
             persistence.getPerson(almaId)?.name shouldBe "Alma Gropius"
@@ -42,24 +42,17 @@ class PersistenceTests : DescribeSpec({
         }
         it("updates an address, identified by ID") {
             val twSydId = 7654322L
-            persistence.saveAddress(
-                Address(
-                    id = twSydId,
-                    line1 = "52 Carrington Street",
-                    suburb = "Sydney",
-                    state = State.NSW,
-                    postcode = 2000,
-                )
+            val wrongStreetNumber = Address(
+                id = twSydId,
+                line1 = "52 Carrington Street",
+                suburb = "Sydney",
+                state = State.NSW,
+                postcode = 2000,
             )
-            persistence.saveAddress(
-                Address(
-                    id = twSydId,
-                    line1 = "50 Carrington Street",
-                    suburb = "Sydney",
-                    state = State.NSW,
-                    postcode = 2000,
-                )
-            )
+            persistence.saveAddress(wrongStreetNumber)
+
+            val rightStreetNumber = wrongStreetNumber.copy(line1 = "50 Carrington Street")
+            persistence.saveAddress(rightStreetNumber)
 
             persistence.getAddress(twSydId)?.line1 shouldBe "50 Carrington Street"
         }
