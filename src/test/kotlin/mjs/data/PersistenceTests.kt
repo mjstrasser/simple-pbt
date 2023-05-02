@@ -2,9 +2,12 @@ package mjs.data
 
 import io.kotest.core.spec.style.DescribeSpec
 import io.kotest.matchers.shouldBe
+import mjs.kotest.description
 import java.time.LocalDate
 
 class PersistenceTests : DescribeSpec({
+    description("Example tests of persisting values to the simple database.")
+
     describe("persisting people") {
         val persistence = Persistence()
         it("gets a person who was saved, identified by their ID") {

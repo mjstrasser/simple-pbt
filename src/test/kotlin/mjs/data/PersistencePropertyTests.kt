@@ -11,9 +11,11 @@ import io.kotest.property.arbitrary.orNull
 import io.kotest.property.arbitrary.string
 import io.kotest.property.checkAll
 import io.kotest.property.exhaustive.enum
+import mjs.kotest.description
 import java.time.LocalDate
 
 class PersistencePropertyTests : DescribeSpec({
+    description("Property-based tests of persisting values to the simple database.")
 
     val ids = Arb.long(1_000_000, 1_000_000_000_000)
     val names = Arb.string(1, 60)

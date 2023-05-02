@@ -9,8 +9,13 @@ import mjs.helpers.randomPastDate
 import mjs.helpers.randomPostcode
 import mjs.helpers.randomState
 import mjs.helpers.randomSuburb
+import mjs.kotest.description
 
 class PersistenceRandomTests : DescribeSpec({
+    description(
+        "Example tests of persisting values to the simple database, using randomly-generated values for the fields."
+    )
+
     describe("persisting people") {
         val persistence = Persistence()
         it("gets a person who was saved, identified by their ID") {
