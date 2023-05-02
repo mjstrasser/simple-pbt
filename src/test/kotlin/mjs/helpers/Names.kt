@@ -1,18 +1,8 @@
 package mjs.helpers
 
-import kotlin.random.Random
-
-fun randomAddressLine(): String = "${words.random()} ${words.random()} ${words.random()}"
-
-fun randomSuburb(): String = words.random()
-
-fun randomState(): String = words.random()
-
-fun randomPostcode(): String = Random.nextInt(2000, 8000).toString()
-
 fun randomName(): String = "${words.random()} ${words.random()}"
 
-private val words = listOf(
+val words = listOf(
     "April", "August", "December", "Earth", "February", "Friday", "God", "I", "January", "July", "June", "March",
     "May", "Monday", "November", "October", "Saturday", "September", "Sunday", "Thursday", "Tuesday", "Wednesday",
     "actor", "adjective", "adult", "afternoon", "air", "airport", "alive", "animal", "apartment", "apple", "arm",
