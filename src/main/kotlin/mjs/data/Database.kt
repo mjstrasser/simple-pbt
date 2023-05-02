@@ -2,6 +2,12 @@ package mjs.data
 
 import java.time.LocalDate
 
+data class Person(
+    val id: Long,
+    val name: String,
+    val dateOfBirth: LocalDate,
+)
+
 enum class State { ACT, NSW, VIC, QLD, SA, WA, TAS, NT }
 
 data class Address(
@@ -11,10 +17,4 @@ data class Address(
     val suburb: String,
     val state: State,
     val postcode: Int,
-)
-
-data class Person(
-    val id: Long,
-    val name: String,
-    val dateOfBirth: LocalDate,
 )

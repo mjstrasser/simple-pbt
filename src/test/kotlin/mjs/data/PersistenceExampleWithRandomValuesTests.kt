@@ -11,7 +11,7 @@ import mjs.helpers.randomState
 import mjs.helpers.randomSuburb
 import mjs.kotest.description
 
-class PersistenceRandomTests : DescribeSpec({
+class PersistenceExampleWithRandomValuesTests : DescribeSpec({
     description(
         "Example tests of persisting values to the simple database, using randomly-generated values for the fields."
     )

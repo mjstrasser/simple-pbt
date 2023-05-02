@@ -5,7 +5,7 @@ import io.kotest.matchers.shouldBe
 import mjs.kotest.description
 import java.time.LocalDate
 
-class PersistenceTests : DescribeSpec({
+class PersistenceExampleTests : DescribeSpec({
     description("Example tests of persisting values to the simple database.")
 
     describe("persisting people") {
@@ -17,7 +17,7 @@ class PersistenceTests : DescribeSpec({
 
             persistence.getPerson(walterId) shouldBe walter
         }
-        it("updates a person, identified by ID") {
+        it("changes the name of a person, identified by their ID") {
             val almaId = 1234568L
             val almaMahler = Person(almaId, "Alma Mahler", LocalDate.of(1879, 8, 31))
             persistence.savePerson(almaMahler)
