@@ -12,7 +12,7 @@ class PersistenceExampleTests : DescribeSpec({
             val twBneId = 7654321L
             val address = Address(
                 id = twBneId,
-                line1 = "129 Creek Street",
+                line1 = "Level 19, 127 Creek Street",
                 suburb = "Brisbane",
                 state = State.QLD,
                 postcode = 4000,
