@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="More detailed specification of generators">
+    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Fix example test data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Database.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Database.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/DatesTimes.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Names.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Words.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +187,7 @@
       <workItem from="1683193042874" duration="598000" />
       <workItem from="1683199215330" duration="1000" />
       <workItem from="1683432933601" duration="1954000" />
-      <workItem from="1683435000813" duration="972000" />
+      <workItem from="1683435000813" duration="1866000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1681453905946</created>
@@ -281,7 +273,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683068303613</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Simpler database with only Addresses ‘table’">
+      <created>1683438154419</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683438154419</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fix example test data">
+      <created>1683438688643</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683438688643</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +306,8 @@
     <MESSAGE value="Added description strings to specs" />
     <MESSAGE value="Consistent names; moved generators to separate object" />
     <MESSAGE value="More detailed specification of generators" />
-    <option name="LAST_COMMIT_MESSAGE" value="More detailed specification of generators" />
+    <MESSAGE value="Simpler database with only Addresses ‘table’" />
+    <MESSAGE value="Fix example test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix example test data" />
   </component>
 </project>
