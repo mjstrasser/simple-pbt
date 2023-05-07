@@ -1,7 +1,5 @@
 package mjs.helpers
 
-fun randomName(): String = "${words.random()} ${words.random()}"
-
 val words = listOf(
     "April", "August", "December", "Earth", "February", "Friday", "God", "I", "January", "July", "June", "March",
     "May", "Monday", "November", "October", "Saturday", "September", "Sunday", "Thursday", "Tuesday", "Wednesday",

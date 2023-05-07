@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Added description strings to specs">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" afterDir="false" />
+    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="More detailed specification of generators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Database.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Database.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceRandomTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/DatesTimes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Names.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Words.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +31,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="simple-pbt" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -55,24 +68,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/michael/dev/kotlin/simple-pbt/src/test/kotlin/mjs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michael/dev/kotlin/simple-pbt/src/test/kotlin/mjs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/kotlin/mjs" />
@@ -175,7 +191,11 @@
       <workItem from="1681451090451" duration="2863000" />
       <workItem from="1681454289986" duration="1747000" />
       <workItem from="1682993530253" duration="2375000" />
-      <workItem from="1683003589751" duration="8903000" />
+      <workItem from="1683003589751" duration="10890000" />
+      <workItem from="1683193042874" duration="598000" />
+      <workItem from="1683199215330" duration="1000" />
+      <workItem from="1683432933601" duration="1954000" />
+      <workItem from="1683435000813" duration="972000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1681453905946</created>
@@ -247,7 +267,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683009885583</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Consistent names; moved generators to separate object">
+      <created>1683012527920</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683012527920</updated>
+    </task>
+    <task id="LOCAL-00012" summary="More detailed specification of generators">
+      <created>1683068303613</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683068303613</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +298,8 @@
     <MESSAGE value="Kotest property tests" />
     <MESSAGE value="Made basic test more consistent" />
     <MESSAGE value="Added description strings to specs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added description strings to specs" />
+    <MESSAGE value="Consistent names; moved generators to separate object" />
+    <MESSAGE value="More detailed specification of generators" />
+    <option name="LAST_COMMIT_MESSAGE" value="More detailed specification of generators" />
   </component>
 </project>

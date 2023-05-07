@@ -3,31 +3,9 @@ package mjs.data
 import io.kotest.core.spec.style.DescribeSpec
 import io.kotest.matchers.shouldBe
 import mjs.kotest.description
-import java.time.LocalDate
 
 class PersistenceExampleTests : DescribeSpec({
     description("Example tests of persisting values to the simple database.")
-
-    describe("persisting people") {
-        val persistence = Persistence()
-        it("gets a person who was saved, identified by their ID") {
-            val walterId = 1234567L
-            val walter = Person(walterId, "Walter Gropius", LocalDate.of(1883, 5, 18))
-            persistence.savePerson(walter)
-
-            persistence.getPerson(walterId) shouldBe walter
-        }
-        it("changes the name of a person, identified by their ID") {
-            val almaId = 1234568L
-            val almaMahler = Person(almaId, "Alma Mahler", LocalDate.of(1879, 8, 31))
-            persistence.savePerson(almaMahler)
-
-            val almaGropius = almaMahler.copy(name = "Alma Gropius")
-            persistence.savePerson(almaGropius)
-
-            persistence.getPerson(almaId)?.name shouldBe "Alma Gropius"
-        }
-    }
     describe("persisting addresses") {
         val persistence = Persistence()
         it("gets an address that was saved, identified by ID") {

@@ -1,13 +1,5 @@
 package mjs.data
 
-import java.time.LocalDate
-
-data class Person(
-    val id: Long,
-    val name: String,
-    val dateOfBirth: LocalDate,
-)
-
 enum class State { ACT, NSW, VIC, QLD, SA, WA, TAS, NT }
 
 data class Address(

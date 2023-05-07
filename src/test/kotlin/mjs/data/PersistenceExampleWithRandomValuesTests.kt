@@ -4,8 +4,6 @@ import io.kotest.core.spec.style.DescribeSpec
 import io.kotest.matchers.shouldBe
 import mjs.helpers.randomAddressLine
 import mjs.helpers.randomId
-import mjs.helpers.randomName
-import mjs.helpers.randomPastDate
 import mjs.helpers.randomPostcode
 import mjs.helpers.randomState
 import mjs.helpers.randomSuburb
@@ -15,28 +13,6 @@ class PersistenceExampleWithRandomValuesTests : DescribeSpec({
     description(
         "Example tests of persisting values to the simple database, using randomly-generated values for the fields."
     )
-
-    describe("persisting people") {
-        val persistence = Persistence()
-        it("gets a person who was saved, identified by their ID") {
-            val id = randomId()
-            val person = Person(id, randomName(), randomPastDate())
-            persistence.savePerson(person)
-
-            persistence.getPerson(id) shouldBe person
-        }
-        it("changes the name of a person, identified by their ID") {
-            val id = randomId()
-            val person = Person(id, randomName(), randomPastDate())
-            persistence.savePerson(person)
-
-            val newName = randomName()
-            val personWithNewName = person.copy(name = newName)
-            persistence.savePerson(personWithNewName)
-
-            persistence.getPerson(id)?.name shouldBe newName
-        }
-    }
     describe("persisting addresses") {
         val persistence = Persistence()
         it("gets an address that was saved, identified by ID") {
