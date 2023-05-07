@@ -36,16 +36,17 @@ class PersistenceExampleWithRandomValuesTests : DescribeSpec({
             val address = Address(
                 id = id,
                 line1 = randomAddressLine(),
+                line2 = randomAddressLine(),
                 suburb = suburb,
                 state = state,
                 postcode = postcode,
             )
             persistence.saveAddress(address)
 
-            val newLine1 = randomAddressLine()
-            persistence.saveAddress(address.copy(line1 = newLine1))
+            val newLine2 = randomAddressLine()
+            persistence.saveAddress(address.copy(line2 = newLine2))
 
-            persistence.getAddress(id)?.line1 shouldBe newLine1
+            persistence.getAddress(id)?.line2 shouldBe newLine2
         }
     }
 })
