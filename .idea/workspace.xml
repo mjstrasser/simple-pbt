@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Modify address line 2 in random values test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-    </list>
+    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Reorganised files with random values" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +188,7 @@
       <workItem from="1683435000813" duration="3787000" />
       <workItem from="1683525871623" duration="1923000" />
       <workItem from="1683531697840" duration="61000" />
-      <workItem from="1684061302867" duration="54000" />
+      <workItem from="1684061302867" duration="367000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1681453905946</created>
@@ -305,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683439438779</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Reorganised files with random values">
+      <created>1684061631753</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684061631753</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +332,7 @@
     <MESSAGE value="Fix example test data" />
     <MESSAGE value="Use both address lines in update example" />
     <MESSAGE value="Modify address line 2 in random values test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify address line 2 in random values test" />
+    <MESSAGE value="Reorganised files with random values" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reorganised files with random values" />
   </component>
 </project>

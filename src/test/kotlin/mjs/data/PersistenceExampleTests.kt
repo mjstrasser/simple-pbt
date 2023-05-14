@@ -23,7 +23,7 @@ class PersistenceExampleTests : DescribeSpec({
         }
         it("updates an address, identified by ID") {
             val twSydId = 7654322L
-            val wrongStreetNumber = Address(
+            val wrongStreetAddress = Address(
                 id = twSydId,
                 line1 = "Level 20",
                 line2 = "52 Carrington Street",
@@ -31,12 +31,12 @@ class PersistenceExampleTests : DescribeSpec({
                 state = State.NSW,
                 postcode = 2000,
             )
-            persistence.saveAddress(wrongStreetNumber)
+            persistence.saveAddress(wrongStreetAddress)
 
-            val rightStreetNumber = wrongStreetNumber.copy(line2 = "50 Carrington Street")
-            persistence.saveAddress(rightStreetNumber)
+            val rightStreetAddress = wrongStreetAddress.copy(line2 = "50 Carrington Street")
+            persistence.saveAddress(rightStreetAddress)
 
-            persistence.getAddress(twSydId) shouldBe rightStreetNumber
+            persistence.getAddress(twSydId) shouldBe rightStreetAddress
         }
     }
 })
