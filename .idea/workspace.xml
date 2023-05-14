@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Use both address lines in update example">
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" afterDir="false" />
+    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Modify address line 2 in random values test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +188,10 @@
       <workItem from="1683193042874" duration="598000" />
       <workItem from="1683199215330" duration="1000" />
       <workItem from="1683432933601" duration="1954000" />
-      <workItem from="1683435000813" duration="2191000" />
+      <workItem from="1683435000813" duration="3787000" />
+      <workItem from="1683525871623" duration="1923000" />
+      <workItem from="1683531697840" duration="61000" />
+      <workItem from="1684061302867" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1681453905946</created>
@@ -294,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683439262551</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Modify address line 2 in random values test">
+      <created>1683439438779</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683439438779</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +327,7 @@
     <MESSAGE value="Simpler database with only Addresses ‘table’" />
     <MESSAGE value="Fix example test data" />
     <MESSAGE value="Use both address lines in update example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use both address lines in update example" />
+    <MESSAGE value="Modify address line 2 in random values test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify address line 2 in random values test" />
   </component>
 </project>
