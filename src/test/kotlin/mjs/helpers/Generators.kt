@@ -14,7 +14,7 @@ import mjs.data.State
  * Kotest property generators for types in the database.
  */
 val genId = Arb.long(1_000_000..1_000_000_000_000)
-val genAddressLine = Arb.string(2..100, Codepoint.alphanumeric())
+val genStreet = Arb.string(2..100, Codepoint.alphanumeric())
 val genSuburb = Arb.string(2..50, Codepoint.alphanumeric())
 val genState = Exhaustive.enum<State>()
 val genPostcode = Arb.int(1000..9000)

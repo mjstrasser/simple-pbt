@@ -5,7 +5,7 @@ import kotlin.random.Random
 
 fun randomId(): Long = Random.nextLong(1_000_000, 1_000_000_000_000)
 
-fun randomAddressLine(): String = "${words.random()} ${words.random()} ${words.random()}"
+fun randomStreet(): String = "${words.random()} ${words.random()} ${words.random()}"
 
 fun randomSuburb(): String = words.random()
 

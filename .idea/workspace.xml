@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Reorganised files with random values" />
+    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Better variable name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Database.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Database.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/RandomValues.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/RandomValues.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +197,8 @@
       <workItem from="1683435000813" duration="3787000" />
       <workItem from="1683525871623" duration="1923000" />
       <workItem from="1683531697840" duration="61000" />
-      <workItem from="1684061302867" duration="367000" />
+      <workItem from="1684061302867" duration="3970000" />
+      <workItem from="1684318659184" duration="788000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1681453905946</created>
@@ -309,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684061631753</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Better variable name">
+      <created>1684061728881</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684061728881</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +350,7 @@
     <MESSAGE value="Use both address lines in update example" />
     <MESSAGE value="Modify address line 2 in random values test" />
     <MESSAGE value="Reorganised files with random values" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganised files with random values" />
+    <MESSAGE value="Better variable name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better variable name" />
   </component>
 </project>
