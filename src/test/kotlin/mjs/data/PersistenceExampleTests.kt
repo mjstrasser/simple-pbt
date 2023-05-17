@@ -7,8 +7,8 @@ import mjs.kotest.description
 class PersistenceExampleTests : DescribeSpec({
     description("Example tests of persisting values to the simple database.")
     describe("persisting addresses") {
-        val persistence = Persistence()
         it("gets an address that was saved, identified by ID") {
+            val persistence = Persistence()
             val twBneId = 7654321L
             val address = Address(
                 id = twBneId,
@@ -22,6 +22,7 @@ class PersistenceExampleTests : DescribeSpec({
             persistence.getAddress(twBneId) shouldBe address
         }
         it("updates an address, identified by ID") {
+            val persistence = Persistence()
             val twSydId = 7654322L
             val wrongStreetAddress = Address(
                 id = twSydId,

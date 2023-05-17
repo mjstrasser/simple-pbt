@@ -14,8 +14,8 @@ class PersistenceExampleWithRandomValuesTests : DescribeSpec({
         "Example tests of persisting values to the simple database, using randomly-generated values for the fields."
     )
     describe("persisting addresses") {
-        val persistence = Persistence()
         it("gets an address that was saved, identified by ID") {
+            val persistence = Persistence()
             val id = randomId()
             val address = Address(
                 id = id,
@@ -29,6 +29,7 @@ class PersistenceExampleWithRandomValuesTests : DescribeSpec({
             persistence.getAddress(id) shouldBe address
         }
         it("updates an address, identified by ID") {
+            val persistence = Persistence()
             val id = randomId()
             val suburb = randomSuburb()
             val state = randomState()

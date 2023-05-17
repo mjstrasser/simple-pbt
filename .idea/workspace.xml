@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Better variable name">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Database.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Database.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/RandomValues.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/RandomValues.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
