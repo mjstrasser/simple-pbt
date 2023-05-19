@@ -5,7 +5,7 @@ import io.kotest.matchers.shouldBe
 import mjs.kotest.description
 
 class PersistenceExampleTests : DescribeSpec({
-    description("Example tests of persisting values to the simple database.")
+    description("Example-based tests of persisting values to the simple database.")
     describe("persisting addresses") {
         it("gets an address that was saved, identified by ID") {
             val persistence = Persistence()

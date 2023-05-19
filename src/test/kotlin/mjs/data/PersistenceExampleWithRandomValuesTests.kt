@@ -10,9 +10,10 @@ import mjs.helpers.randomSuburb
 import mjs.kotest.description
 
 class PersistenceExampleWithRandomValuesTests : DescribeSpec({
-    description(
-        "Example tests of persisting values to the simple database, using randomly-generated values for the fields."
-    )
+    description("""
+        Example-based tests of persisting values to the simple database,
+        using randomly-generated values for the fields.
+    """.trimIndent())
     describe("persisting addresses") {
         it("gets an address that was saved, identified by ID") {
             val persistence = Persistence()
