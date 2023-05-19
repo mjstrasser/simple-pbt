@@ -15,8 +15,20 @@ class PersistencePropertyTests : DescribeSpec({
     describe("persisting addresses") {
         it("gets an address that was saved, identified by ID") {
             val persistence = Persistence()
-            checkAll(genId, genStreet, genSuburb, genState, genPostcode) { id, street, suburb, state, postcode ->
-                val address = Address(id, street, suburb, state, postcode)
+            checkAll(
+                genId,
+                genStreet,
+                genSuburb,
+                genState,
+                genPostcode
+            ) { id, street, suburb, state, postcode ->
+                val address = Address(
+                    id = id,
+                    street = street,
+                    suburb = suburb,
+                    state = state,
+                    postcode = postcode
+                )
                 persistence.saveAddress(address)
 
                 persistence.getAddress(id) shouldBe address

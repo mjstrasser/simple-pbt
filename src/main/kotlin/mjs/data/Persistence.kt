@@ -1,11 +1,9 @@
 package mjs.data
 
 class Persistence {
-
     private val addresses = mutableMapOf<Long, Address>()
 
     fun saveAddress(address: Address) {
-
         assert(address.id in (1_000_000..1_000_000_000_000))
         assert(address.street.length in (2..60))
         assert(address.suburb.length in (2..30))
@@ -15,5 +13,4 @@ class Persistence {
     }
 
     fun getAddress(id: Long): Address? = addresses[id]
-
 }
