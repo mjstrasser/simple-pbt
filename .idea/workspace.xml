@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Shorter lengths for address fields">
-      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f006231e-0c1f-4e2b-ba65-668cda4a7221" name="Changes" comment="Updated README, added LICENSE and some formatting">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mjs/data/Persistence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistenceExampleWithRandomValuesTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/data/PersistencePropertyTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/mjs/helpers/Generators.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +100,30 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.simple-pbt [clean test]">
+    <configuration name="PersistenceExampleWithRandomValuesTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;mjs.data.PersistenceExampleWithRandomValuesTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="PersistenceTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -174,7 +199,13 @@
       <item itemvalue="Gradle.simple-pbt [clean test]" />
       <item itemvalue="Gradle.RandomPersistenceTest" />
       <item itemvalue="Gradle.PersistenceTest" />
+      <item itemvalue="Gradle.PersistenceExampleWithRandomValuesTests" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PersistenceExampleWithRandomValuesTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -337,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684322529935</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Updated README, added LICENSE and some formatting">
+      <created>1684492775370</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684492775370</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +402,7 @@
     <MESSAGE value="Better variable name" />
     <MESSAGE value="Construct Persistence instance for each test" />
     <MESSAGE value="Shorter lengths for address fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shorter lengths for address fields" />
+    <MESSAGE value="Updated README, added LICENSE and some formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README, added LICENSE and some formatting" />
   </component>
 </project>

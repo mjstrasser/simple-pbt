@@ -43,12 +43,15 @@ class PersistencePropertyTests : DescribeSpec({
                 genSuburb,
                 genState,
                 genPostcode
-            ) { id, oldStreet, newStreet, suburb, state, postcode ->
-                val address = Address(id, oldStreet, suburb, state, postcode)
-                persistence.saveAddress(address)
-                persistence.saveAddress(address.copy(street = newStreet))
+            ) { id, street1, street2, suburb, state, postcode ->
 
-                persistence.getAddress(id)?.street shouldBe newStreet
+                val address1 = Address(id, street1, suburb, state, postcode)
+                persistence.saveAddress(address1)
+
+                val address2 = address1.copy(street = street2)
+                persistence.saveAddress(address2)
+
+                persistence.getAddress(id) shouldBe address2
             }
         }
     }

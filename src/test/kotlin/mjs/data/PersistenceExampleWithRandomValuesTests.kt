@@ -2,10 +2,10 @@ package mjs.data
 
 import io.kotest.core.spec.style.DescribeSpec
 import io.kotest.matchers.shouldBe
-import mjs.helpers.randomStreet
 import mjs.helpers.randomId
 import mjs.helpers.randomPostcode
 import mjs.helpers.randomState
+import mjs.helpers.randomStreet
 import mjs.helpers.randomSuburb
 import mjs.kotest.description
 
@@ -34,19 +34,14 @@ class PersistenceExampleWithRandomValuesTests : DescribeSpec({
             val suburb = randomSuburb()
             val state = randomState()
             val postcode = randomPostcode()
-            val address = Address(
-                id = id,
-                street = randomStreet(),
-                suburb = suburb,
-                state = state,
-                postcode = postcode,
-            )
-            persistence.saveAddress(address)
 
-            val newLine2 = randomStreet()
-            persistence.saveAddress(address.copy(street = newLine2))
+            val address1 = Address(id, randomStreet(), suburb, state, postcode)
+            persistence.saveAddress(address1)
 
-            persistence.getAddress(id)?.street shouldBe newLine2
+            val address2 = address1.copy(street = randomStreet())
+            persistence.saveAddress(address2)
+
+            persistence.getAddress(id) shouldBe address2
         }
     }
 })

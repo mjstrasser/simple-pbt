@@ -33,7 +33,8 @@ class PersistenceExampleTests : DescribeSpec({
             )
             persistence.saveAddress(wrongStreetAddress)
 
-            val rightStreetAddress = wrongStreetAddress.copy(street = "Level 20, 50 Carrington Street")
+            val rightStreetAddress = wrongStreetAddress
+                .copy(street = "Level 20, 50 Carrington Street")
             persistence.saveAddress(rightStreetAddress)
 
             persistence.getAddress(twSydId) shouldBe rightStreetAddress
